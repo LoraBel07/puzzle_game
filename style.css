@@ -1,0 +1,25 @@
+body {
+padding: 20px;
+}
+.puzzle {
+	margin-left: 33%;
+}
+.row {
+	display: flex;
+	height: 100px;
+}
+.column {
+	width: 120px;
+	border: 1px solid #000;
+}
+h1 {
+	margin-left: 25%;
+}
+.images {
+	margin-left: 5%;
+} 
+.images img {	
+	width: 90px;
+	height: 80px;
+	border: 1px solid #000;
+}
