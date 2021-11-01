@@ -1,25 +1,58 @@
 body {
-padding: 20px;
+	background-color:rgb(182, 179, 179);
 }
-.puzzle {
-	margin-left: 33%;
+#container {
+	width: 850px;
+	border: 2px solid black;
+	border-radius: 20px;
+	margin: 10px auto;
+	padding: 10px;
+	position: relative;
 }
-.row {
-	display: flex;
+#pieceContainer {
+	width: 408px;
+	height: 408px;
+	border: 1px solid black;
+	float: left;
+	text-align: center;
+	font-size: 30px;
+	line-height: 400px;
+	position:relative;
+}
+#puzzleContainer {
+	width: 408px;
+	height: 408px;
+	border: 1px solid black;
+	float: right;
+}
+ul {
+	list-style-type: none;
+	text-align: center;
+}
+ul button {
+	width: 100px;
+	border: 1px solid black;
+	font-size: 20px;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 10px;
+	background-color: rgb(150, 149, 149);
+}
+#btnReset {
+	display: none;
+}
+.piece {
+	width: 100px;
 	height: 100px;
-}
-.column {
-	width: 120px;
 	border: 1px solid #000;
+	float: left;
+	background-image: url(book2.jpg);
+	background-repeat: no-repeat;
 }
-h1 {
-	margin-left: 25%;
-}
-.images {
-	margin-left: 5%;
-} 
-.images img {	
-	width: 90px;
-	height: 80px;
-	border: 1px solid #000;
+.pieceHolder {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	float: left;
+	background-repeat: no-repeat;
 }
