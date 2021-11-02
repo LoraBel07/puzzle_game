@@ -67,8 +67,8 @@ $(document).ready(function(){
 
 						let item = $("#puzzleContainer .droppedPiece:eq(" + k + ")");
 						let order = item.data("order");
-						console.log("order: " + order); // + order
-						console.log("K: " + k);
+						// console.log("order: " + order); // + order
+						// console.log("K: " + k);
 
 						if(k != order) {
 							$("#piecesContainer").text("Ouch! Try Again!");
