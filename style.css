@@ -1,9 +1,25 @@
-body {
-	background-color:rgb(182, 179, 179);
+body {    
+    background: linear-gradient(-45deg, #c77fc7, #97b8c4, #bb91a1, gray);
+	background-size: 500% 1000%;
+	animation: gradient 16s ease infinite;
+	height: 100vh;
+    color: white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 #container {
 	width: 850px;
-	border: 2px solid black;
+	border: 2px solid white;
 	border-radius: 20px;
 	margin: 10px auto;
 	padding: 10px;
@@ -12,7 +28,7 @@ body {
 #pieceContainer {
 	width: 408px;
 	height: 408px;
-	border: 1px solid black;
+	border: 1px solid white;
 	float: left;
 	text-align: center;
 	font-size: 30px;
@@ -22,7 +38,7 @@ body {
 #puzzleContainer {
 	width: 408px;
 	height: 408px;
-	border: 1px solid black;
+	border: 1px solid white;
 	float: right;
 }
 ul {
@@ -31,12 +47,12 @@ ul {
 }
 ul button {
 	width: 100px;
-	border: 1px solid black;
+	border: 1px solid white;
 	font-size: 20px;
 	border-radius: 5px;
 	padding: 5px;
 	margin-top: 10px;
-	background-color: rgb(150, 149, 149);
+	background-color: rgb(236, 235, 235);
 }
 #btnReset {
 	display: none;
@@ -44,7 +60,7 @@ ul button {
 .piece {
 	width: 100px;
 	height: 100px;
-	border: 1px solid #000;
+	border: 1px solid white;
 	float: left;
 	background-image: url(book2.jpg);
 	background-repeat: no-repeat;
@@ -52,7 +68,7 @@ ul button {
 .pieceHolder {
 	width: 100px;
 	height: 100px;
-	border: 1px solid black;
+	border: 1px solid white;
 	float: left;
 	background-repeat: no-repeat;
 }

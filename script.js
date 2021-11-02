@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 			$("#puzzleContainer").html(emptyString); //emptyString / pieces ???
 			$(this).hide();
-			$("#btnReset").show()
+			$("#btnReset").show();
 			implementLogic()
 	})  //end $("btnStart").click(function())
 
@@ -36,8 +36,8 @@ $(document).ready(function(){
 		$("#btnStart").show();
 	})  //end $("#btnReset").click(function())
 
-	function createPieces(withImage)
-			{
+	function createPieces(withImage) {
+
 				let rows = 4, columns = 4;
 				let pieces = "";
 
